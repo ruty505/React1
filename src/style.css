@@ -1,0 +1,152 @@
+/* איפוס בסיסי (במקום index.css) */
+body {
+  margin: 0;
+  background: #f3f4f8;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #2d3142;
+}
+
+#root {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+.dashboard {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* כותרת */
+.header {
+  background: linear-gradient(135deg, #6c63ff, #8e84ff);
+  color: white;
+  text-align: center;
+  padding: 24px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 20px rgba(108, 99, 255, 0.3);
+}
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* כפתורים */
+.btn {
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: 2px solid #6c63ff;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-primary {
+  background: #6c63ff;
+  color: white;
+}
+.btn-outline {
+  background: white;
+  color: #6c63ff;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(108, 99, 255, 0.25);
+}
+.toggle-stats {
+  margin-bottom: 16px;
+}
+
+/* סטטיסטיקות */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.stat-box {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+.stat-number {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #6c63ff;
+}
+.stat-label {
+  color: #777;
+  margin-top: 4px;
+}
+
+/* חיפוש וסינון */
+.search-area {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  background: white;
+  padding: 16px;
+  border-radius: 14px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+.search-input {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px 14px;
+  border: 2px solid #e0e0ee;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+.search-input:focus {
+  border-color: #6c63ff;
+}
+
+/* כרטיסי תלמידות */
+.student-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+.student-card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  border-top: 5px solid #6c63ff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s;
+}
+.student-card:hover {
+  transform: translateY(-4px);
+}
+.student-card.inactive {
+  border-top-color: #bbb;
+  opacity: 0.75;
+}
+.student-card h3 {
+  margin-top: 0;
+}
+.student-card p {
+  margin: 6px 0;
+}
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+.badge-good {
+  background: #e3f9e5;
+  color: #1f8a3b;
+}
+.badge-bad {
+  background: #ffe3e3;
+  color: #c92a2a;
+}
