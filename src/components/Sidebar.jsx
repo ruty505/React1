@@ -25,6 +25,7 @@ function Sidebar() {
       <NavLink to="/" style={getLinkStyle}>דשבורד</NavLink>
       <NavLink to="/students" style={getLinkStyle}>כל התלמידות</NavLink>
       <NavLink to="/excellent" style={getLinkStyle}>תלמידות מצטיינות</NavLink>
+      <NavLink to="/users" style={getLinkStyle}>רשימת משתמשים</NavLink>
     </nav>
   );
 }

@@ -7,6 +7,7 @@ import NotFound from './pages/NotFound';
 import StudentDetails from './pages/StudentDetails'; 
 import Sidebar from './components/Sidebar';
 import './style.css';
+import UserList from './components/UserList';
 function App() {
   return (
     <BrowserRouter>
@@ -18,7 +19,7 @@ function App() {
         <Route path="/students" element={<Students />} />   
         <Route path="/students/:id" element={<StudentDetails />} />
         <Route path="/excellent" element={<ExcellentStudents />} />
-        
+        <Route path="/users" element={<UserList />} />
         {/* נתיב שלא מוכר - שגיאה 404 */}
         <Route path="*" element={<NotFound />} />
       </Routes>
