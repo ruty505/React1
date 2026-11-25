@@ -7,4 +7,11 @@ export const getAllUsersAxios = async () => {
     } catch (error) {
         throw error.message || "Error fetching users";
     }
+    
 };
+const usersUri = 'http://localhost:3000/users'
+
+export const addUserAxios = async (userObj) => {
+    const response = await axios.post(`${usersUri}/signup`, userObj)
+    return response.data // { user, token }
+}
